@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    {% load static %}
+    <link rel=" stylesheet" href="{% static 'question.css' %}?{% now " U" %} ">
+    <link rel=" stylesheet" href="{% static 'styles.css' %}?{% now " U" %} ">
+    <link rel=" stylesheet" href="{% static 'util.css' %}?{% now " U" %} ">
+
+
+    <link rel=" stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Reduce | Lower carbon footprint, one person at a time </title>
+</head>
+
+<body>
+    <header>
+        <div class="logo_wrap"></div>
+        <p class="logo">ReduCe</p>
+        <nav>
+            <ul>
+                <li><a href="./dashboard.html">Dashboard</a></li>
+                <li><a href="./index.html">Calculator</a></li>
+                <li><a href="">Log In</a></li>
+                <li><a href="">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="question">
+            <div class="icon-bar">
+                <a href="#" class="carbon active"><img src="{% static 'img/carbon_carbon.png' %}" alt=""></a>
+                <a href="#" class="plane"><img src="{% static 'img/plane.png' %}" alt=""></a>
+                <a href="#" class="car"><img src="{% static 'img/car.png' %}" alt=""></a>
+                <a href="#" class="pizza"><img src="{% static 'img/pizza.png' %}" alt=""></a>
+                <a href="#" class="house"><img src="{% static 'img/house.png' %}" alt=""></a>
+                <a href="#" class="cart"><img src="{% static 'img/cart.png' %}" alt=""></a>
+            </div>
+            <div class="question_form">
+                <h3>Transport footprint</h3>
+                <p id="question"></p>
+                <div id="answers">
+                </div>
+                <button class="question_form__next_button">Next</button>
+            </div>
+        </section>
+    </main>
+    <script src="../static/js/questions.js"></script>
+    <script src="../static/js/askQuestion.js"></script>
+</body>
+
+</html>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+

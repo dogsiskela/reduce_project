@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'dashboard.css' %}?{% now " U" %} ">
+    <link rel=" stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Reduce | Lower carbon footprint, one person at a time </title>
+</head>
+
+<body>
+    <header>
+        <div class="logo_wrap"></div>
+        <p class="logo">ReduCe</p>
+        <nav>
+            <ul>
+                <li><a href="./dashboard.html">Dashboard</a></li>
+                <li><a href="./index.html">Calculator</a></li>
+                <li><a href="">Log In</a></li>
+                <li><a href="">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <aside>
+            <nav>
+                <ul>
+                    <li class="active"><a href=""><img src="../static/img/carbon_blue.png" alt="">Global</a></li>
+                    <li><a href=""><img src="../static/img/plane_blue.png" alt="">Traveling</a></li>
+                    <li><a href=""><img src="../static/img/car_blue.png" alt="">Transport</a></li>
+                    <li><a href=""><img src="../static/img/pizza_blue.png" alt="">Food</a></li>
+                    <li><a href=""><img src="../static/img/house_blue.png" alt="">Accomodation</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <section class="results">
+            <div>
+                <p>My carbon footprint:</p>
+                <h3 id="result"></h3>
+            </div>
+            <section class="weekly_challenge">
+                <h3>Weekly challenge:</h3>
+            </section>
+            <img src="../static/img/dashboard_circle.png" alt="">
+        </section>
+    </main>
+
+    <script>
+        let result = document.getElementById('result');
+        result.innerText = window.localStorage.getItem('carbonScore') + ' Tones\n per month';
+        window.localStorage.removeItem('result');
+    </script>
+    <script src="../static/js/weeklyAdvice.js"></script>
+    <script src="../static/js/loadDashboard.js"></script>
+</body>
+
+</html>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>

@@ -1,0 +1,147 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #196791;
+}
+
+header .logo {
+    font-size: 40px;
+    position: absolute;
+    left: 37px;
+    top: -10px;
+    font-weight: 700;
+}
+
+header nav {
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+header nav ul {
+    display: flex;
+}
+
+nav ul a {
+    text-decoration: none;
+}
+
+header nav ul a {
+    color: #389696;
+    padding: 10px;
+}
+
+header nav ul a:hover {
+    background: #389696;
+    color: #FFFFFF;
+    border-radius: 94px;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+main {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 30px;
+}
+
+.results {
+    display: grid;
+}
+
+.results p {
+    font-size: 15px;
+    padding-left: 15px;
+    padding-top:30px;
+}
+
+.results h3 {
+    font-size: 40px;
+    padding-left: 10px;
+}
+
+.results div {
+    padding: 30px 20px 0;
+    background-color: #E8F0F4;
+    border-radius: 79px 153px 79px 79px;
+    grid-column: 1/6;
+    grid-row: 1/1;
+}
+
+.results .weekly_challenge {
+    grid-column: 1/6;
+    grid-row: 2/2;
+}
+
+.results img {
+    grid-column: 5/7;
+    grid-row: 1/1;
+}
+
+aside nav ul {
+    display: flex;
+    flex-direction: column;
+}
+
+aside nav ul li {
+    padding: 10px 0;
+}
+
+aside nav ul li a {
+    color: #BAD1DE;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+aside nav ul li img {
+    padding: 0 20px;
+}
+
+aside nav ul li:hover {
+    background: #E8F0F4;
+    border-radius: 10px;
+}
+
+aside nav ul li a:hover {
+    color: #196791;
+}
+
+.weekly_challenge {
+    row-gap: 0px;
+}
+
+.weekly_challenge img {
+    height: 130px;
+    grid-column: 1/1;
+    grid-row: 2/4;
+}
+
+.weekly_challenge h5 {
+    grid-column: 2/2;
+    grid-row: 2/2;
+    margin: 0;
+    font-style: italic;
+}
+
+.weekly_challenge p {
+    grid-column: 2/2;
+    grid-row: 3/3;
+}
+
+.weekly_challenge span {
+    grid-column: 2/2;
+    grid-row: 4/4;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.weekly_challenge {
+    display: grid;
+}
